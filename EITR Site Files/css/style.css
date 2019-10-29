@@ -1,0 +1,393 @@
+/****COLORS: 203, 173, 223 is hand purple; 189, 76, 60 is red label cover****/
+
+
+/****** Layout  ******/
+#member-pic {
+	background-image: url("../img/jake.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 50vw;
+	height: 33vw;
+}
+
+.container {
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  	justify-content: center;
+  	margin: auto;
+}
+
+.stretch-container {
+	width: 100%;
+	display: flex;
+	background-color: black;
+	flex-direction: row;
+	align-items: center;
+  	justify-content: center;
+
+}
+
+.split-image {
+	width: 375px;
+	height: auto;
+}
+
+
+.split-text {
+	width: 50%;
+}
+
+.full-text { 
+	width: 75%;
+	margin: auto;
+}
+.giant-image {
+	max-width: 100%;
+}
+
+.scroll-image { 
+	width: 750px;
+ }
+
+ p {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 0;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.primary-text { 
+	color: rgb(189, 76, 60);
+	font-family: 'Knewave', cursive;
+	text-shadow: 5px 3px 2px rgba(0,0,0,0.75);
+	font-size: 75px;
+	display: block;
+	text-align: center;
+	margin-bottom: 0;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+
+.secondary-text {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 3rem;
+	color: black;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.primary-link, .primary-link:hover {
+	color: black;
+	font-size: 1.85rem;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-decoration: none;
+	text-align: center;
+}
+.secondary-link {
+	font-family:'Roboto Condensed', sans-serif;
+	font-size: 35px;
+	text-align: center;
+	display: block;
+}
+
+.secondary-link:hover {
+	text-decoration: underline;
+	text-decoration-color: rgb(203, 173, 223);
+	color: black;
+	background-color: white;
+	font-size: 35px;
+	text-align: center;
+	display: block;
+
+}
+.primary-link:hover {
+	background-color: rgb(189, 76, 60);
+	color: white;
+}
+
+.contact-form {
+font-family: 'Roboto Condensed', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 0;
+	padding-right: 20px;
+	padding-left: 20px;
+
+}
+
+input[type=text] {
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 50%;
+  height: 30px;
+}
+
+input[type=submit] {
+	background-color: rgb(189, 76, 60);
+	color: white;
+	border: 3px solid black;
+	width: 10%;
+	height: 30px;
+	font-size: 20px;
+}
+
+input[type=submit]:hover {
+	background-color: white;
+	color: rgb(189, 76, 60);
+
+}
+
+textarea {
+	width: 50%;
+	height: 100px;
+	border: 2px solid black;
+   border-radius: 4px;
+   resize: none;
+}
+.event-link { 
+	color: white;
+	background-color: black;
+	border: 3px solid black;
+	font-size: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.event-link:hover {
+	background-color: white;
+	color: black;
+	font-size: 30px;
+
+}
+
+/*** SMARTPHONE MEDIA QUERIES ***/
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.stretch-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+	}
+	.menuBar {
+
+	}
+	.split-text {
+		width: 100%;
+	}
+	.full-text { 
+		width: 100%;
+		margin: auto;
+	}
+	.split-image {
+		width: 250px;
+		height: auto;
+	}
+	.scroll-image { 
+	width: 100%;
+ 	}
+ 	.hero-image {
+ 		width: 100%;
+ 	}
+ 	p {
+ 		font-size: 22px;
+ 	}
+ 	.primary-text {
+ 		font-size: 50px;
+ 	}
+ 	.secondary-text {
+ 		font-size: 35px;
+ 	}
+ 	.primary-link, .primary-link:hover {
+		font-size: 20px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.secondary-link {
+		font-size: 25px;
+	}
+
+	.secondary-link:hover {
+		font-size: 25px;
+	}
+
+	.contact-form {
+		font-size: 25px;
+	}
+	
+	textarea {
+		width: 80%;
+		height: 100px;
+	}
+	input[type=text] {
+	  width: 80%;
+	}
+	input[type=submit] {
+		width: 50%;
+		height: 30px;
+		font-size: 20px;
+	}
+	.event-link { 
+		font-size: 20px;
+	}
+
+	.event-link:hover {
+		font-size: 20px;
+	}
+	#member-pic {
+		width: 100vw;
+		height: 66vw;
+	}
+	#member-info {
+		min-height: 372px;
+	}
+}
+
+/*** iPhone 5 ***/
+@media only screen and (max-width: 325px) {
+	.primary-link {
+		font-size: 18px;
+	}
+	p {
+		font-size: 18px;
+	}
+}
+
+/*** iPad ***/
+@media only screen and (max-width: 769px) {
+	.stretch-container {
+		flex-direction: column;
+	}
+}
+
+/*** DESKTOP MEDIA QUERIES***/
+@media only screen and (min-width: 601px) {
+	.hero-image {
+		max-width: 600px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+}
+}
+
+
+.menuBar {
+text-align: center;
+}
+
+/****** Independent of screen size ******/
+a, a:hover {
+	color: black;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-decoration: none;
+	text-align: center;
+}
+
+ul {
+
+list-style-type: none;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+li p {
+
+	margin:0;
+	padding: 0;
+
+}
+
+li {
+	padding: 10px;
+}
+
+
+
+
+.inverted {
+color: white;
+background-color: black;
+}
+
+.inverted-shadow {
+	text-shadow: 5px 3px 2px rgba(250,250,250,1);
+}
+.bordered-box {
+
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 75%;
+	margin: auto;
+	border: 6px solid black;
+	max-width: 550px;
+
+}
+
+
+
+/**** Social Media buttons -- generated online ****/
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons:hover{
+  list-style: none;
+  padding: 0;
+  background-color: black;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.share-button-link:hover{
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
