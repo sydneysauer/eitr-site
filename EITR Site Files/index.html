@@ -15,9 +15,10 @@
 	<div class= "menuBar" id="menu">
 		<a class="primary-link" href="#rowAboutUs">ABOUT</a>  
 		<a class="primary-link" href="#rowEvents">EVENTS</a> 
-		<a class="primary-link" href="#rowGallery">GALLERY</a>  
+		<a class="primary-link" href="#rowMerch">MERCH</a>  
 		<a class="primary-link" href="#rowContact">CONTACT</a>
 	</div>
+	<script src="https://kit.fontawesome.com/49c7606d46.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/animations.js"></script>
 </head>
@@ -30,10 +31,12 @@
 		</div>
 		<div class="split-text">
 				<p class="primary-text">STREAM</p>
-				<p><i><strong>The Champagne of Bands</i></strong></p>
-				<a href="https://open.spotify.com/artist/06PvP78cnKP527pWXsTyT6" class="secondary-link">SPOTIFY</a>
-				<a href="https://open.spotify.com/artist/06PvP78cnKP527pWXsTyT6" class="secondary-link">APPLE MUSIC</a>
-				<a href="https://open.spotify.com/artist/06PvP78cnKP527pWXsTyT6" class="secondary-link">SOUNDCLOUD</a>	
+				<p><strong>The Champagne of Bands</strong></p>
+				<div class="social-icons">
+					<a href="https://open.spotify.com/artist/06PvP78cnKP527pWXsTyT6" class="secondary-link"><i class="fab fa-apple music"></i></a>
+					<a href="https://open.spotify.com/artist/06PvP78cnKP527pWXsTyT6" class="secondary-link"><i class="fab fa-spotify music"></i></a>
+					<a href="https://open.spotify.com/artist/06PvP78cnKP527pWXsTyT6" class="secondary-link"><i class="fab fa-soundcloud music"></i></a>
+				</div>
 		</div>
 	</div>
 
@@ -62,10 +65,11 @@
 		<div class="scroll-image" id="member-pic"></div>
 		<div class="split-text inverted" id="member-info">
 				<p class="primary-text inverted-shadow" id="member-name">JAKE</p>
-		    	<p class="secondary-text inverted" id="member-role"> VOCALS</p><br>
+				<p class="secondary-text inverted" id="member-role"> VOCALS</p><br>
 		    	<p class="inverted" id="member-bio">Jake Conder currently works as a troll. He resides underneath the Olmsted Falls bridge 
 					waiting for squirrels, cats, and occasionally small dogs to walk over. Jake shares custody of his 2 daughters 
 					with his ex-wife, Nancy Reagan. Jake’s singing is said to induce panic in children as he sings at 85 dB and 17,400 hz. </p>
+				<p><i class="fas fa-arrow-alt-circle-left " id="back"></i><i class="fas fa-arrow-alt-circle-right" id="forward"></i></p>
 		</div>
 	</div>
 	<br>
@@ -82,7 +86,7 @@
 			</li>
 			<li>
 				<p><strong>11-1-2019    Meet and Greet @ Location</strong></p>
-				<p><i>You could write a little note here telling fans what's going on</i></p><br>
+				<p>You could write a little note here telling fans what's going on</p><br>
 				<a href="https://www.google.com/" class="event-link">INFO</a><br>
 			</li>
 			<li>
@@ -97,17 +101,38 @@
 	<br>
 	<br>
 	<br>
+
+	<p class="secondary-text">Buy our stuff</p>	
+	<div class="row merch-row" id="rowMerch">
+		<div class="merch-item" >
+			<img src="img/merch-shirt.jpeg" alt="shirt">
+			<p>$30</p>
+			<p>Men's Shirt</p>
+			<button id="mens-shirt"><a href="https://www.google.com/">ADD TO CART</a></button>
+		</div>
+		<div class="merch-item">
+			<img src="img/merch-shirt.jpeg" alt="shirt" >
+			<p>$30</p>
+			<p>Women's Shirt</p>
+			<button id="womens-shirt"><a href="https://www.google.com/">ADD TO CART</a></button>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+
 	<div class="row" id="rowContact">
 		<div>
 			<p class="secondary-text">Get In Touch</p>
-			<form class="contact-form" action="mailto:sydney.sauer@outlook.com" method="post" enctype="text/plain">
+			<form class="contact-form" action="https://formspree.io/xknwkojl" method="POST" enctype="text/plain" name="contact-form">
 				<p>Want to book us for a show, ask us a question, or send us a lengthy string of expletives? Let us know here!</p>
 				NAME   <br>
 				<input type="text" name="name"><br><br>
 				EMAIL  <br>
 				<input type="text" name="email"><br><br>
 				COMMENT <br>
-				<textarea rows="4" columns="50"></textarea><br>
+				<textarea rows="4" columns="50" name="comment"></textarea><br>
 				<input type="submit" value="SUBMIT">
 			</form>
 		</div>
@@ -116,21 +141,9 @@
 	<br>
 	<br>
 	<br>
-	<div class="row" id="rowGallery">
-		<div>Gallery will go here</div>
-	</div>
 
-
-	
-	
 	<footer class="inverted">
 		<br>
-		<ul class="share-buttons">
-		  <li><a href="https://www.facebook.com/sharer/sharer.php?u=&quote=" title="Like us on Facebook" target="_blank" 
-			class="share-button-link"><img alt="Share on Facebook" src="img/Facebook.png" /></a></li>
-		  <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet us"><img alt="Tweet" src="img/Twitter.png" /></a></li>
-		  <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="img/Email.png" /></a></li>
-		</ul>
 		<p>Site by Sydney Sauer</p>
 		<br>
 	</footer>

@@ -2,6 +2,38 @@
 
 
 /****** Layout  ******/
+
+button {
+	background-color: rgb(189, 76, 60);
+	color: white;
+	border: 3px solid black;
+	border-radius: 4px;
+	width: 80%;
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: auto;
+}
+
+button:hover {
+	background-color: white;
+	color: rgb(189, 76, 60);
+
+}
+.merch-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+.merch-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	padding: 15px 15px 10px 15px;
+}
 #member-pic {
 	background-image: url("../img/jake.jpg");
 	background-size: cover;
@@ -9,6 +41,28 @@
 	background-repeat: no-repeat;
 	width: 50vw;
 	height: 33vw;
+}
+.music {
+	color: black;
+	font-size: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.social-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+i {
+	color:white;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	justify-content: center;
+	align-content: center;
+	font-size: 50px;
+	display: block;
+	text-align: center;
 }
 
 .container {
@@ -52,7 +106,7 @@
 	width: 750px;
  }
 
- p {
+p {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 25px;
 	text-align: center;
@@ -142,6 +196,7 @@ input[type=submit] {
 	width: 10%;
 	height: 30px;
 	font-size: 20px;
+	border-radius: 4px;
 }
 
 input[type=submit]:hover {
@@ -185,6 +240,7 @@ textarea {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 
 	}
 	.menuBar {
@@ -232,6 +288,13 @@ textarea {
 	.contact-form {
 		font-size: 25px;
 	}
+	.merch-row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+
+	}
 	
 	textarea {
 		width: 80%;
@@ -252,12 +315,21 @@ textarea {
 	.event-link:hover {
 		font-size: 20px;
 	}
+	.music {
+		font-size: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	#member-pic {
 		width: 100vw;
 		height: 66vw;
 	}
 	#member-info {
-		min-height: 372px;
+		min-height: 420px;
+	}
+	#merch-pic {
+		width: 66vw;
+		height: 100vw;
 	}
 }
 
@@ -320,9 +392,6 @@ li {
 	padding: 10px;
 }
 
-
-
-
 .inverted {
 color: white;
 background-color: black;
@@ -342,52 +411,3 @@ background-color: black;
 	max-width: 550px;
 
 }
-
-
-
-/**** Social Media buttons -- generated online ****/
-ul.share-buttons{
-  list-style: none;
-  padding: 0;
-}
-
-ul.share-buttons:hover{
-  list-style: none;
-  padding: 0;
-  background-color: black;
-}
-
-ul.share-buttons li{
-  display: inline;
-}
-
-ul.share-buttons .sr-only{
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.share-button-link:hover{
-	color: black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
